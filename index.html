@@ -1,31 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8" />
-<title>Здесь я учусь</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #7fd1e3;
+      color: rgb(0, 0, 0);
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .layout {
+      display: flex;
+      min-height: calc(100vh - 60px); /* минус шапка */
+    }
+
+    .left,
+    .right {
+      width: 20%;
+      background-color: #36e3c629;
+      padding: 20px;
+    }
+
+    .center {
+      width: 60%;
+      padding: 20px;
+      background-color: #83f8c758;
+    }
+
+    /* Пример стиля для блоков */
+    .left {
+      border-right: 1px solid #0ba83a;
+    }
+
+    .right {
+      border-left: 1px solid #6ad358;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #8ae1fc;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3c3b3b;
+    }
+  </style>
 </head>
 <body>
-  <h1 class="header">Добро пожаловать на мой тестовый сайт</h1>
-  <div class="container">
-    <nav class="left-menu">
-      <ul>
-        <li><button class="active">Главная</button></li>
-        <li><button>Мои работы</button></li>
-        <li><button>Описание</button></li>
-        <li><button>Контакты</button></li>
-      </ul>
-    </nav>
-    <nav class="right-menu">
-      <ul>
-        <li><button>Эфир</button></li>
-        <li><button>Новости</button></li>
-        <li><button>Информация</button></li>
-        <li><button>Реклама</button></li>
-        <li><button>Блог</button></li>
-        <li><button>О нас</button></li>
-      </ul>
-    </nav>
+
+  <header>
+    Добро пожаловать на мой сайт!
+  </header>
+
+  <div class="layout">
+    <div class="left">
+      <button>Главная</button>
+      <button>О нас</button>
+      <button>Контакты</button>
+    </div>
+
+    <div class="center">
+      <h2>Центральный блок</h2>
+      <p>Здесь находится основной контент сайта. Можно разместить текст, изображения, статьи и т.д.</p>
+    </div>
+
+    <div class="right">
+      <button>Новости</button>
+      <button>События</button>
+      <button>Блог</button>
+    </div>
   </div>
+
 </body>
 </html>
